@@ -1,11 +1,125 @@
 * {
-    font-family: "Poppins";
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-  }
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
 body {
-    background: #e3e9f7;
+  background:linear-gradient(#3CD500,#FFF720);
+  /* background: linear-gradient(#3cd500, #fff720); */
+}
+.events{
+  width: 85%;
+  /* background: #fefefe; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px auto;
+  background-color: #fefefe;
+  border-radius: 10px;
+}
+.description{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.description p{
+  padding: auto;
+  margin: 5px auto;
+}
+.event_list{
+
+  width: 85%;
+  margin: 0 auto;  
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  grid-template-columns:30% 30% 30% ;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 30% 30% 30%;
+  border-radius: 10px;
+  background-color: #fefefe;
+  
+}
+.event_cart_1{
+  background-color: #ededed;
+  border-radius: 10px ;
+  
+}
+.event_cart_2{
+  background-color: #ededed;
+  border-radius: 10px ;
+}
+.event_cart_3{
+  background-color: #ededed;
+  border-radius: 10px ;
+}
+.event_cart_4{
+  background-color: #ededed;
+  border-radius: 10px ;
+}
+.event_cart_5{
+  background-color: #ededed;
+  border-radius: 10px ;
+}
+.event_cart_6{
+  background-color: #ededed;
+  border-radius: 10px ;
+}
+.event_cart_7{
+  background-color: #ededed;
+  border-radius: 10px ;
+}
+.event_cart_8{
+  background-color: #ededed;
+  border-radius: 10px ;
+}
+.event_cart_9{
+  background-color: #ededed;
+  border-radius: 10px ;
+}
+.event_list img{
+  width: 60%;
+  height: 150px;
+  border-radius: 6px;
+  transition: transform 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.event_list h2{
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.event_list p{
+  width: auto;
+  text-align: justify;
+}
+.event_list button{
+  margin: 10px auto;
+  font-size: 14px;
+  width: 20%;
+  height: 40px;
+  background-color: rgb(255,0, 204);
+  border-style: none;
+  border-radius: 5px;
+  color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+} 
+.event_list img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 3px lightblue;
 }

@@ -8,7 +8,9 @@
 }
 /*Body */
 body {
-  background: #e3e9f7;
+  /* background:linear-gradient(#85FFBD,#FFFB7D); */
+ /* background-image:radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,152,59,1) 0%, rgba(255,216,53,1) 90% );*/
+  background:linear-gradient(#3CD500,#FFF720);
 }
 
 .search_bar {
