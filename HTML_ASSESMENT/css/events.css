@@ -30,31 +30,32 @@ body {
 }
 .description p{
   padding: auto;
-  margin: 5px auto;
+  margin: 10px auto;
 }
 .event_list{
 
   width: 85%;
   margin: 0 auto;  
   display: grid;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   gap: 20px;
-  grid-template-columns:30% 30% 30% ;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns:30% 30% 30%;
   border-radius: 10px;
   background-color: #fefefe;
   
 }
+/*event carts 1-9 start */
 .event_cart_1{
   background-color: #ededed;
   border-radius: 10px ;
+  margin: 10px 0;
   
 }
 .event_cart_2{
   background-color: #ededed;
   border-radius: 10px ;
+  margin: 8px 0;
 }
 .event_cart_3{
   background-color: #ededed;
@@ -67,6 +68,7 @@ body {
 .event_cart_5{
   background-color: #ededed;
   border-radius: 10px ;
+  
 }
 .event_cart_6{
   background-color: #ededed;
@@ -84,6 +86,9 @@ body {
   background-color: #ededed;
   border-radius: 10px ;
 }
+/*event carts 1-9 end*/
+
+/* event image*/
 .event_list img{
   width: 60%;
   height: 150px;
@@ -102,8 +107,8 @@ body {
   margin: 0 auto;
 }
 .event_list p{
-  width: auto;
-  text-align: justify;
+  text-align:center;
+  font-size: 16px;
 }
 .event_list button{
   margin: 10px auto;
