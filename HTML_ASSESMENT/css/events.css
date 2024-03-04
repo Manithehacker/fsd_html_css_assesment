@@ -33,7 +33,6 @@ body {
   margin: 10px auto;
 }
 .event_list{
-
   width: 85%;
   margin: 0 auto;  
   display: grid;
@@ -77,12 +76,15 @@ body {
 .event_cart_7{
   background-color: #ededed;
   border-radius: 10px ;
+  margin: 10px auto;
 }
 .event_cart_8{
   background-color: #ededed;
   border-radius: 10px ;
+  margin: 10px auto;
 }
 .event_cart_9{
+  margin: 10px auto;
   background-color: #ededed;
   border-radius: 10px ;
 }
