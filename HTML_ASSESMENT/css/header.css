@@ -42,3 +42,10 @@ header{
     border-radius: 5.5px;
 }
 /*header section End */
+
+@media screen and (max-width:780px) {
+    header .nav_logo{
+        font-size: 15px;   
+    }
+    
+}
