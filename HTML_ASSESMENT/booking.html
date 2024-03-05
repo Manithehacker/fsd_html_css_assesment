@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet"
-  />
+    rel="stylesheet" />
   <!--fontawesome link-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <!--Stylesheet link-->
@@ -16,89 +16,103 @@
 
   <!--footer style -->
   <link rel="stylesheet" href="./css/footer.css">
-    <title>Document</title>
+  <title>Document</title>
 </head>
+
 <body>
-    <header>
-        <!--nav logo-->
-        <a href="index.html"> <h2 class="nav_logo">Event Booking System</h2></a>
-        <!--Nav links -->
-        <ul class="nav_links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="booking.html">Booking </a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+  <header>
+    <!--nav logo-->
+    <a href="index.html">
+      <h2 class="nav_logo">Event Booking System</h2>
+    </a>
+    <!--Nav links -->
+    <ul class="nav_links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="booking.html">Booking </a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <div class="booking_main">
+      <div class="introduction">
+        <h2>Book Your Tickets
+
+        </h2>
+        <p>Welcome to the booking page for <b> Event Booking System </b>Secure your tickets to the event of your choice
+          by completing the form below.
+
+        </p>
+      </div>
+      <div class="booking_event_details">
+        <h2>Event details</h2>
+        <ul>
+          <li>Event Name:  CodeCon</li>
+          <li>Date:  05/03/2024</li>
+          <li>Time: 07:00</li>
+          <li>Venue: Chennai</li>
         </ul>
-      </header>
-
-    <main>
-      <div class="booking_main">
-        <div class="introduction">
-          <h2>Book Your Tickets
-
-          </h2>
-          <p>Welcome to the booking page for [Your Event Booking Website]! Secure your tickets to the event of your choice by completing the form below.
-
-          </p>
-        </div>
-        <div class="booking_event_details">
-          <h2>Event details</h2>
-          <ul>
-            <li>Event Name:</li>
-            <li>Date:</li>
-            <li>Time:</li>
-            <li>Venue:</li>
-          </ul>
-        </div>
-        <div class="ticket_selction">
-          <h3>Select the number of tickets and ticket types you'd like to purchase:</h3>
-          <input type="radio">
-        </div>
-        <div class="personal_inform">
-          <h2>Personal Information</h2>
-          <form action="">
-            <input type="text" name="name" id="" placeholder="name">
-            <input type="email" name="email" placeholder="email">
-            <input type="tel" name="phonenumber" placeholder="mobile">
-          </form>
-        </div>
-        <div class="term">
-          <h2>Terms and Conditions</h2>
-          <input type="checkbox"><p>Before proceeding, please review and accept our terms and conditions
-          </p>
-          
-        </div>
-        <div class="confirm_booking">
-          <button type="submit">Confirm Booking</button>
-        </div>
+      </div>
+      <div class="ticket_selction">
+        <label for="ticket">Select the number of tickets and ticket types you'd like to purchase:
+          <select name="" id="ticket">
+            <option value="CodeCon">CodeCon</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+          </select>
 
       </div>
-    </main>
-    <footer>
-        <div class="footer_main">
-          <div class="important_link">
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="events.html">Events</a></li>
-            </ul>
+      <div class="personal_inform">
+        <h2>Personal Information</h2>
+        <form action="">
+          <input type="text" name="name" id="" placeholder="name">
+          <input type="email" name="email" placeholder="email">
+          <input type="tel" name="phonenumber" placeholder="mobile">
+
+        </form>
+        <div class="term"> 
+          <input type="checkbox">
+          <label>Before proceeding, please review and accept our terms and
+            conditions</label>
           </div>
-          <div class="address">
-            <ul>
-              <li><p>Phone:+1 (555) 123-4567</p></li>
-              <li><p>Email: info@example.com</p></li>
-              <li><p>Address: 123 Main Street, City, Country</p></li>
-            </ul>
-          </div>
-          <div class="social_media">
-            <ul>
-              <li><i class="fa-brands fa-facebook icon_1"></i><span>Facebook</span></li>
-              <li><i class="fa-brands fa-instagram icon_2"></i><span>Instagram</span></li>
-              <li><i class="fa-brands fa-linkedin icon_3"></i><span>LinkedIn</span></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+
+        <button type="submit">Confirm Booking</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer_main">
+      <div class="important_link">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="events.html">Events</a></li>
+        </ul>
+      </div>
+      <div class="address">
+        <ul>
+          <li>
+            <p>Phone:+1 (555) 123-4567</p>
+          </li>
+          <li>
+            <p>Email: info@example.com</p>
+          </li>
+          <li>
+            <p>Address: 123 Main Street, City, Country</p>
+          </li>
+        </ul>
+      </div>
+      <div class="social_media">
+        <ul>
+          <li><i class="fa-brands fa-facebook icon_1"></i><span>Facebook</span></li>
+          <li><i class="fa-brands fa-instagram icon_2"></i><span>Instagram</span></li>
+          <li><i class="fa-brands fa-linkedin icon_3"></i><span>LinkedIn</span></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

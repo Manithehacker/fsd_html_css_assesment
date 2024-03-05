@@ -7,5 +7,119 @@
     text-decoration: none;
   }
   body{
-    background: #e3e9f7;
+    background:linear-gradient(#3CD500,#FFF720);
   }
+
+ /* booking main*/
+ .booking_main{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+ } 
+ /* introduction*/
+ .introduction{
+  margin:50px auto;
+  box-shadow: 0 0 10px 5px #f9f7f7;
+ }
+ .introduction h2 {
+  width: 60%;
+  text-align: center;
+  margin: 20px auto;
+  
+ }
+ .introduction p{
+  width: 70%;
+  margin: 10px auto;
+  text-align: center;
+ }
+/*event details*/
+.booking_event_details{
+  box-shadow: 0 0 10px 5px #f9f7f7;
+  width: 50%;
+  margin: 20px auto;
+}
+.booking_event_details h2{
+ width:100%;
+ margin: 0 auto;
+ text-align: center;
+
+}
+.booking_event_details ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ticket_selction {
+  box-shadow: 0 0 10px 5px #f9f7f7;
+  width: 50%;
+  border-radius: 5px;
+  
+}
+
+/* personal */
+
+.personal_inform {
+  box-shadow: 0 0 10px 5px #f9f7f7;
+}
+.personal_inform h2{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+.personal_inform form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.personal_inform form input{
+  width: 80%;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fefefe;
+}
+
+.personal_inform form input::placeholder{
+  text-align: center;
+  font-size: 15px;
+}
+.personal_inform form input:focus{
+  outline: none;
+}
+
+
+.term {
+  width: 80%;
+  margin: 10px auto;
+
+}
+.term label{
+  display: inline;
+}
+.term input [type="checkbox"]{
+  display: inline;
+}
+/* submit button*/
+.personal_inform button{
+  margin: 10px auto;
+  width: 40%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  
+}
+.personal_inform button:hover{
+  color: white;
+  background-color:#3CD500;
+}
