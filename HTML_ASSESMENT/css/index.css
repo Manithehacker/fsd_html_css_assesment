@@ -9,7 +9,6 @@
 body {
   background: linear-gradient(#3CD500,#FFF720);
 }
-
 .search_bar {
   width: 40%;
   display: flex;
@@ -39,7 +38,6 @@ body {
   border: 3px solid #e600dd;
 }
 
-
 /*main section Start*/
 
 h1{
@@ -64,8 +62,6 @@ h1{
  /*      */
 
 }
-
-
 .message_title {
   text-align: center;
   margin: 20px auto;
