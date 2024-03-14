@@ -7,7 +7,7 @@
   text-decoration: none;
 }
 body {
-  background: linear-gradient(#3CD500,#FFF720);
+  background: linear-gradient(#aad500,#FFF720);
 }
 .search_bar {
   width: 40%;
@@ -59,6 +59,11 @@ h1{
   margin: 58px auto;
   background-color: #fefefe;
   border-radius: 10px;
+  /* background-color:135deg,rgba(255, 255, 255,0.1),rgba(255, 255, 255,0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  box-shadow: 0 8px 32px 0px rgba(255, 255, 255,0.1); */
  /*      */
 
 }
