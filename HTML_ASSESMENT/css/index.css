@@ -7,7 +7,10 @@
   text-decoration: none;
 }
 body {
-  background: linear-gradient(#aad500,#FFF720);
+  /* background: linear-gradient(#aad500,#FFF720); */
+background: url("https://static.vecteezy.com/system/resources/previews/000/523/309/original/web-development-and-programming-coding-concept-seo-optimization-modern-web-design-on-laptop-screen-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .search_bar {
   width: 40%;
@@ -16,6 +19,7 @@ body {
   align-items: center;
   margin: 59px auto;
   height: 2px;
+
 }
 .search_bar input {
   width: 350px;
@@ -25,6 +29,7 @@ body {
 }
 .search_bar input:focus {
   outline: 3px solid #e600dd;
+
 }
 .search_bar button {
   width: 20%;
@@ -35,7 +40,8 @@ body {
   background-color: #fefefe;
 }
 .search_bar button:hover {
-  border: 3px solid #e600dd;
+  background-color:  #e600dd;
+  color:#fefefe;
 }
 
 /*main section Start*/
@@ -48,6 +54,7 @@ h1{
   margin: 40px auto;
   color: #e600dd;
  font-family: "Poppins",sans-serif;
+ 
 }
 
 /* section_1 start*/
@@ -57,7 +64,11 @@ h1{
   justify-content: center;
   align-items: center;
   margin: 58px auto;
-  background-color: #fefefe;
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255,0.08);
+  color: #f9f7f7;
+  /* box-shadow: 0 0 5px 1px #fefefe; */
+
   border-radius: 10px;
   /* background-color:135deg,rgba(255, 255, 255,0.1),rgba(255, 255, 255,0);
   backdrop-filter: blur(10px);
@@ -70,7 +81,7 @@ h1{
 .message_title {
   text-align: center;
   margin: 20px auto;
-  color:rgb(5, 4, 5);
+  color: #f9f7f7;
 }
 
 .message_details {
@@ -88,7 +99,7 @@ h1{
 
 
 .upcoming_events_title{
-color: black;
+color: rgb(249, 247, 247);
 }
 
 /*section_2 start*/
@@ -98,9 +109,12 @@ color: black;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fefefe;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 2px 0px #fefefe;
   border-radius: 10px;
   margin: 20px auto;
+  
+color: #f9f7f7;
 }
 .events {
   display: flex;
@@ -110,7 +124,7 @@ color: black;
 }
 .event_1 h2{
   margin: 10px 0;
- color:black;
+ 
 }
 .event_2 h2{
   margin: 10px 0;
@@ -123,6 +137,7 @@ color: black;
   border-radius: 10px;
   /* background-color: #e40f0f; */
 }
+
 
 .events img{
   border-radius: 6px;
@@ -146,10 +161,14 @@ color: black;
   font-size: 14px;
   width: 20%;
   height: 40px;
-  background-color: rgb(255,0, 204);
+  /* background-color: rgb(255,0, 204); */
   border-style: none;
   border-radius: 5px;
-  color: #fefefe;
+  color: black;
+}
+.events button:hover{
+  background-color: #e600dd;
+  color: #f9f7f7;
 }
 /* scetion_2 end */
 

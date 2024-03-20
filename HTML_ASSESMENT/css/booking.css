@@ -7,7 +7,9 @@
     text-decoration: none;
   }
   body{
-    background:linear-gradient(#3CD500,#FFF720);
+    background: url("https://static.vecteezy.com/system/resources/previews/000/523/309/original/web-development-and-programming-coding-concept-seo-optimization-modern-web-design-on-laptop-screen-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
  /* booking main*/
@@ -23,7 +25,11 @@
  /* introduction*/
  .introduction{
   margin:50px auto;
-  box-shadow: 0 0 10px 5px #f9f7f7;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+ box-shadow: 0 0 1px 0px #f9f7f7;
+ color: #f9f7f7;
+
  }
  .introduction h2 {
   width: 60%;
@@ -38,14 +44,18 @@
  }
 /*event details*/
 .booking_event_details{
-  box-shadow: 0 0 10px 5px #f9f7f7;
+  box-shadow: 0 0 1px 0px #f9f7f7;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
   width: 50%;
   margin: 20px auto;
+  color: #f9f7f7;
 }
 .booking_event_details h2{
  width:100%;
  margin: 0 auto;
  text-align: center;
+ color: #f9f7f7;
 
 }
 .booking_event_details ul {
@@ -53,23 +63,31 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 .ticket_selction {
-  box-shadow: 0 0 10px 5px #f9f7f7;
+  box-shadow: 0 0 2px 0px #f9f7f7;
   width: 50%;
   border-radius: 5px;
+  color: black;
+  font-weight: 500;
+ 
   
 }
 
 /* personal */
 
 .personal_inform {
-  box-shadow: 0 0 10px 5px #f9f7f7;
+  box-shadow: 0 0 2px 0px #f9f7f7;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  color: #f9f7f7;
 }
 .personal_inform h2{
   width: 60%;
   margin: 0 auto;
   text-align: center;
+  /* color: #0e0202; */
   
 }
 .personal_inform form{
@@ -78,6 +96,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  color: #f9f7f7;
 }
 .personal_inform form input{
   width: 80%;
@@ -103,6 +122,7 @@
 }
 .term label{
   display: inline;
+  color: #f9f7f7;
 }
 .term input [type="checkbox"]{
   display: inline;
@@ -121,5 +141,5 @@
 }
 .personal_inform button:hover{
   color: white;
-  background-color:#3CD500;
+  background-color:rgb(255,0, 204);
 }

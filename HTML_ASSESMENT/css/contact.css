@@ -7,7 +7,9 @@
     text-decoration: none;
   }
 body {
-    background: linear-gradient(#3CD500,#FFF720);
+    background: url("https://static.vecteezy.com/system/resources/previews/000/523/309/original/web-development-and-programming-coding-concept-seo-optimization-modern-web-design-on-laptop-screen-vector.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*main content*/
@@ -23,7 +25,8 @@ body {
 }
 .child_1{
   margin: 30px auto;
-  box-shadow: 0 0 10px 5px #f9f7f7;
+  backdrop-filter: blur(30px);
+ box-shadow: 0 0 2px 0px #f9f7f7;
   border-radius: 10px;
 }
 .child_1 h2{
@@ -43,7 +46,8 @@ body {
  /* background-color: #fefefe;  */
 margin: 20px auto;
  border-radius: 10px;
- box-shadow: 0 0 10px 5px #f9f7f7;
+ backdrop-filter: blur(30px);
+ box-shadow: 0 0 2px 0px #f9f7f7;
 }
 .child_2 h2{
   width: 60%;
@@ -63,7 +67,8 @@ margin: 20px auto;
   height: 40px;
   border-style: none;
   border-radius: 10px;
-  background-color: #E4E6EB;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 2px 0px #f9f7f7;
   border: none;
 }
 /* placeholder*/
@@ -79,7 +84,8 @@ margin: 20px auto;
 .feedback_form textarea{
   width: 70%;
   border-radius: 10px;
-  background-color: #E4E6EB;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 2px 0px #f9f7f7;
   border: none;
 } 
 .feedback_form textarea::placeholder{
@@ -111,7 +117,8 @@ margin: 20px auto;
   align-items: center;
   margin: 0 auto;
   /* background-color: #fefefe; */
-  box-shadow: 0 0 10px 5px #f9f7f7;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 2px 0px #f9f7f7;
   border-radius: 10px;
 }
 .child_3 h2{
@@ -133,7 +140,8 @@ margin: 20px auto;
   align-items: center;
   margin :0 auto;
   gap: 20px;
-  box-shadow: 0 0 10px 5px #f9f7f7;
+  backdrop-filter: blur(30px);
+  box-shadow: 0 0 2px 0px #f9f7f7;
   border-radius: 10px;
 }
 .child_4 h2{

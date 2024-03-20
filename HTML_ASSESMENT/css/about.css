@@ -8,21 +8,24 @@
   }
   /*body*/
 body {
-    background: linear-gradient(#3CD500,#FFF720);
+  background: url("https://static.vecteezy.com/system/resources/previews/000/523/309/original/web-development-and-programming-coding-concept-seo-optimization-modern-web-design-on-laptop-screen-vector.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*main content*/
 .main_content{
   width: 85%;
-  box-shadow: 0 0 10px 5px #f9f7f7; 
+  box-shadow: 0 0 2px 0px #f9f7f7; 
   margin:30px auto;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  color: #f9f7f7;
 
 }
 .child_1{
-  background-color: #ededed;
+  /* background-color: #ededed; */
   border-radius: 8px;
   width: 85%;
   margin: 0 auto;
@@ -31,10 +34,11 @@ body {
   justify-content: space-evenly;
   margin: 10px auto;
   align-items: center;
-  box-shadow: 0 0 10px 3px #f9f7f7;
+  box-shadow: 0 0 2px 0px #f9f7f7;
+  backdrop-filter: blur(30px);
 }
 .child_2{
-  background-color: #ededed;
+
   border-radius: 8px;
   width: 85%;
   margin: 0 auto;
@@ -43,10 +47,11 @@ body {
   justify-content: space-evenly;
   gap: 10px;
   align-items: center;
-  box-shadow: 0 0 10px 3px #f9f7f7;
+  box-shadow: 0 0 2px 0px #f9f7f7;
+  backdrop-filter: blur(30px);
 }
 .child_3{
-  background-color: #ededed;
+  
   border-radius: 8px;
   width: 85%;
   margin: 0 auto;
@@ -55,10 +60,11 @@ body {
   justify-content: space-evenly;
   gap: 10px;
   align-items: center;
-  box-shadow: 0 0 10px 3px #f9f7f7;
+  box-shadow: 0 0 2px 0px #f9f7f7;
+  backdrop-filter: blur(30px);
 }
 .child_4 {
-  background-color: #ededed;
+ 
   border-radius: 8px;
   width: 85%;
   margin: 0 auto;
@@ -67,11 +73,13 @@ body {
   justify-content: space-evenly;
   gap: 10px;
   align-items: center;
-  box-shadow: 0 0 10px 3px #f9f7f7;
+  box-shadow: 0 0 2px 0px #f9f7f7;
+  backdrop-filter: blur(30px);
 }
 .child_5{
-  background-color: #ededed;
-  box-shadow: 0 0 10px 3px #f9f7f7;
+
+  box-shadow: 0 0 2px 0px #f9f7f7;
+  backdrop-filter: blur(30px);
   border-radius: 8px;
   width: 85%;
   margin: 0 auto;
