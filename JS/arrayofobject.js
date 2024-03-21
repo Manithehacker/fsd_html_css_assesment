@@ -39,7 +39,7 @@ export let arr = [
     mobileNo: "12345678",
     image: "../image/nature.jpeg",
     class: "bca",
-    hobbies:["playing","swimming"],
+    hobbies:["playing","singing"],
     address:
     {
         no:122,
@@ -48,13 +48,13 @@ export let arr = [
   },
   {
     studid: 6,
-    studName: "vijay",
+    studName: "agalya",
     studAge: 22,
     studDob: "06/10/2002",
     mobileNo: "12345678",
     image: "../image/helo.jpeg",
     class: "bca",
-    hobbies:["playing","swimming"],
+    hobbies:["listenig","swimming"],
     address:
     {
         no:122,
@@ -69,7 +69,7 @@ export let arr = [
     mobileNo: "12345678",
     image: "../image/test.jpeg",
     class: "ba",
-    hobbies:["playing","swimming"],
+    hobbies:["crciket","swimming"],
     address:
     {
         no:122,

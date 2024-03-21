@@ -17,7 +17,7 @@ let ins=  {
   }
   
   document.getElementById("splice").addEventListener("click",()=>{
-    arr.splice(3,0,ins)
+    arr.splice(0,0,ins)
     let info=arr.map(ele=>{
       return ` <br><hr>stduID:${ele.studid}<hr><br>studName:${arr[1].studName} <br>studMobile:${ele.mobileNo} <br>studenImg:<img src="${ele.image}"><br>dob:${ele.studDob} <br>age:${ele.studAge}<br> class:${ele.class} <br>hobbies:${arr[1].hobbies} address:${arr[0].address.no}  `;
     }).join(" ")
