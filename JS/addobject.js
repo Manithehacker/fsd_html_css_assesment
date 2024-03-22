@@ -8,7 +8,7 @@ document.getElementById("addinfo").addEventListener("click", () => {
   a.setAttribute("method", "get");
   a.setAttribute("action", "#");
   a.setAttribute("enctype", "multipart/form");
-  a.setAttribute("id","for")
+  a.setAttribute("id", "for");
 
   let i = document.createElement("input");
   i.setAttribute("placeholder", "Enter student id");
@@ -90,10 +90,10 @@ function addItems(e) {
   e.preventDefault();
   console.log("hi");
   let obj = {
-    studid: document.getElementById("i").value,
-    studname: document.getElementById("i1").value,
-    studage: document.getElementById("i2").value,
-    stdudob: document.getElementById("i3").value,
+    studId: document.getElementById("i").value,
+    studName: document.getElementById("i1").value,
+    studAge: document.getElementById("i2").value,
+    studDob: document.getElementById("i3").value,
     Hobbies: Array.from(document.getElementsByName("hobbies[]"))
       .filter((fil) => {
         return fil.checked;
@@ -103,7 +103,12 @@ function addItems(e) {
       }),
   };
   console.log(obj);
-}
 
+  arr.push(obj);
+  document.getElementById("he").innerHTML = arr.map((ele) => {
+    return ` <br><hr>stduID:${ele.studid}<br> <hr>studName:${arr[1].studName}<hr> <br>studMobile:${ele.mobileNo} <hr><br>studenImg:<img src="${ele.image}"> <hr><br>dob:${ele.studDob} <br>age:${ele.studAge}<br> class:${ele.class} <br>hobbies:${arr[1].hobbies} address:${arr[0].address.no}  `;
+
+  });
+}
 // import { arr } from "./arrayofobject.js";
 // console.log(arr);
