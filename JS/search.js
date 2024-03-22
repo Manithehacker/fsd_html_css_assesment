@@ -5,6 +5,7 @@ document.getElementById("search").addEventListener("click", () => {
   let research = arr.filter((ele) => {
     return ele.studAge == 22 && ele.class == "bca" 
   });
+  console.log(research)
   let info = research.map((ele) => {
     return ` <img src="${ele.image}">`;
   });
