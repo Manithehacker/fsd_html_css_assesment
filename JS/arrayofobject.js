@@ -48,7 +48,7 @@ export let arr = [
   },
   {
     studid: 6,
-    studName: "agalya",
+    studName: "krishnaveni",
     studAge: 22,
     studDob: "06/10/2002",
     mobileNo: "12345678",

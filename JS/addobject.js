@@ -102,7 +102,7 @@ function addItems(e) {
         return ele.value;
       }),
   };
-  console.log(obj);
+  // console.log(obj);
 
   arr.push(obj);
   document.getElementById("he").innerHTML = arr.map((ele) => {
