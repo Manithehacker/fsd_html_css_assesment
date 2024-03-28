@@ -38,7 +38,7 @@ sessionStorage.setItem("age",22)
 //getItem
 console.log(sessionStorage.getItem("name"));
 //getkey
-console.log(sessionStorage.key(1));
+console.log(sessionStorage.key(0));
 
 
 // Get the text field that we're going to track
