@@ -1,13 +1,13 @@
-//get buttons id using query selector one by one using forEach
+//get buttons id  one by one using forEach
 document.querySelectorAll("button").forEach((e) => {
   e.addEventListener("click", (e) => {
     //storing buttons id in id variable
     let id = e.target.getAttribute("id");
-
     switch (id) {
       //addItem case
       case "addItem":
         let a = document.createElement("form");
+        a.setAttribute("id","setItem")
 
         let inp1 = document.createElement("input");
         inp1.setAttribute("id", "inp1");
@@ -23,7 +23,7 @@ document.querySelectorAll("button").forEach((e) => {
 
         let inp4 = document.createElement("input");
         inp4.setAttribute("id", "inp4");
-        inp4.setAttribute("placeholder", "enter the product Name");
+        inp4.setAttribute("placeholder", "enter the product type");
 
         let sub = document.createElement("input");
         sub.setAttribute("type", "submit");
@@ -56,16 +56,18 @@ document.querySelectorAll("button").forEach((e) => {
 
       //getItem case
       case "getItem":
-        let b = document.createElement("form");
+        let form2 = document.createElement("form");
+        form2.setAttribute("id","getItem")
+        
         let get = document.createElement("input");
         get.setAttribute("id", "get");
 
         let sub1 = document.createElement("input");
         sub1.setAttribute("type", "submit");
         sub1.setAttribute("id", "submit1");
-        b.appendChild(get);
-        b.appendChild(sub1);
-        document.body.appendChild(b);
+        form2.appendChild(get);
+        form2.appendChild(sub1);
+        document.body.appendChild(form2);
 
         document
           .getElementById("submit1")
@@ -96,15 +98,16 @@ document.querySelectorAll("button").forEach((e) => {
         break;
       //remove case
       case "remove":
-        let form = document.createElement("form");
+        let form3 = document.createElement("form");
+        form3.setAttribute("id","remove")
         let inp = document.createElement("input");
         inp.setAttribute("id", "inp1");
         let sub2 = document.createElement("input");
         sub2.setAttribute("id", "submit");
         sub2.setAttribute("type", "submit");
-        form.appendChild(inp);
-        form.appendChild(sub2);
-        document.body.appendChild(form);
+        form3.appendChild(inp);
+        form3.appendChild(sub2);
+        document.body.appendChild(form3);
 
         document.getElementById("submit").addEventListener("click", () => {
           let inp1 = document.getElementById("inp1").value;
@@ -128,16 +131,17 @@ document.querySelectorAll("button").forEach((e) => {
         break;
       //key case
       case "key":
-        let form2 = document.createElement("form");
+        let form4 = document.createElement("form");
+        form4.setAttribute("id","key")
         let inp8 = document.createElement("input");
         inp8.setAttribute("id", "inp8");
         let inp7 = document.createElement("input");
         inp7.setAttribute("id", "inp7");
         inp7.setAttribute("type", "submit");
         inp7.setAttribute("id", "submit5");
-        form2.appendChild(inp8);
-        form2.appendChild(inp7);
-        document.body.appendChild(form2);
+        form4.appendChild(inp8);
+        form4.appendChild(inp7);
+        document.body.appendChild(form4);
 
         document.getElementById("submit5").addEventListener("click", () => {
           let inp = document.getElementById("inp8").value;
@@ -152,7 +156,7 @@ document.querySelectorAll("button").forEach((e) => {
       //length case
       case "length":
         try{
-          document.write(localStorage.length)
+          document.write(`Length of the local storage${localStorage.length}`)
         }
         catch(e){
           document.write(e)
