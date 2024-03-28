@@ -29,8 +29,9 @@ let arr = `[
 	}
 ]
 `;
-
+console.log()
 let test = JSON.parse(arr);
+console.log(test)
 document.getElementById("test").innerHTML=(
   test.map((ele) => {
     return `name:${ele.name}<br>id:${ele.id}<br>role:${ele.role}<br>age:${ele.age}<br>doj:${ele.doj}<br>married${ele.married}<br>address${ele.address.street}<br>${ele.referred}<br>`;
