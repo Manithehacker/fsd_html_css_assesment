@@ -14,7 +14,7 @@ ew.preventDefault()
     let a=document.getElementById("inp").value;
     let reg=/^[(\w\d\W)+]+@[\w+]+\.[\w+]+$/i//name mathcing regex
     let url=/(https:\/\/www\.|http:\/\/www\.|www.\.)?[\w\d+]+\.[\w]/i//gmail regex
-    let password=/[\w]/
+    // let password=/[\w]/
 
     try{
         if(url.test(a)) document.write(`matched the regex pattern=${a}`)
@@ -26,4 +26,4 @@ ew.preventDefault()
     
 })
 
-let url=/^[(\w)+]+:\/\/(\w+)+\.(\w)+\.[\w]+$/i
+// let url=/^[(\w)+]+:\/\/(\w+)+\.(\w)+\.[\w]+$/i
