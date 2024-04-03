@@ -47,6 +47,7 @@ document.querySelectorAll("button").forEach((e) => {
           try {
             let obj = { name: a, id: b, model: c };
             //storing the data ro local storage
+            console.log(typeof(obj))
             localStorage.setItem(productName, JSON.stringify(obj));
           } catch (e) {
             document.write(e);
@@ -79,12 +80,13 @@ document.querySelectorAll("button").forEach((e) => {
               
             //getting data from local storage
             let info = localStorage.getItem(inp);
-
+              console.log(typeof(info))
             //  get the values  from local storage storing to json format
             let arr = `[${info}]`;
-            console.log(arr);
+            console.log(typeof(arr));
             //convert json into  array
             let convert = JSON.parse(arr);
+            console.log(typeof(convert))
             //maping the data
             let display = convert.map((ele) => {
               return `name:${ele.name} <br>id:${ele.id}<br>model:${ele.model}`;

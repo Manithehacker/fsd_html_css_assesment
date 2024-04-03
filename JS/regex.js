@@ -1,4 +1,4 @@
-let test="MANI krishnaveni"
+let test="MANIKRISHNAVENI"
 
 let reg=/mani/i
 
