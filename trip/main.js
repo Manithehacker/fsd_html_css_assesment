@@ -1,3 +1,5 @@
+
+
 const individual = () => {
   //display none //main document
   document.getElementById("main").style.display = "none";
@@ -81,16 +83,14 @@ const setData = (e) => {
   };
 
   //converting objects into json format then store into localstorage
-  if (localStorage.setItem("solo", JSON.stringify(obj))) {
+ localStorage.setItem("solo", JSON.stringify(obj))
+  pop()
     //once the data submited successfully display block setting the  main container 
     document.getElementById("main").style.display = "block";
     alert("Form submitted successfully");
     //once done reload the page using location reload function
     window.location.reload();
-  }
-  else{
-    alert("Enter the input")
-  }
+
 };
 
 //delete data
@@ -163,7 +163,7 @@ const getData = () => {
   } catch (e) {
     document.write(e);
   }
-  // let daat1 = localStorage.getItem("soloride1");
+  
 };
 
 //deleteData
