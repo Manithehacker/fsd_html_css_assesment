@@ -18,9 +18,11 @@ body {
   width: 85%;
   margin: 20px auto 0px;
   text-align: center;
+  
 }
 .trip h1 {
   font-size: 15px;
+  color: #fff;
 }
 .trip p {
   font-size: 9px;
@@ -63,19 +65,29 @@ body {
   margin: 50px auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 5px;
   box-shadow:  0 0 5px #fcf9b6;
   padding:10px 0px;
 }
+#form1 label{
+  width: 40%;
+  margin:0px 10px;
+  font-size: 10px;
+  display: flex;
+  justify-content:start;
+
+}
 #form1 input {
+  margin: 0 auto;
   padding: 8px 20px;
   border-radius: 20px;
   text-align: center;
   font-size: 10px;
   border: none;
   outline: none;
+  width: 80%;
 }
 #form1 select {
   padding: 8px 15px;
@@ -85,7 +97,9 @@ body {
 }
 /*submit button*/
 #submit1 {
-  padding: 8px 50px !important;
+  margin:10px auto !important;
+  width: 50%!important;
+  padding: 8px 10px !important;
 }
 #submit1:hover {
   color: #fff;
@@ -115,7 +129,7 @@ body {
   text-align: center;
   box-shadow: 0 0 5px #fff;
   gap: 7px;
-  font-size: 12px;
+  font-size: 10px;
 }
 #card-title {
   font-size: 15px !important;
@@ -154,7 +168,7 @@ body {
     padding: 3px 8px;
 }
 #card-date {
-  font-size: 15px;
+
   width: 85%;
   background: #fff;
   border-radius: 30px;
