@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/card.css">
+    <title>Card</title>
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+$(document).ready(()=>{
+    $('p').hide()
+    $("#submit").click(()=>{
+        console.log("test")
+        $('p').animate(
+            {
+                left:'30px',
+                opacity:'0.5',
+                height:'30px',
+                width:'150px'
+            }
+        )
+    })
+})
+
+    </script>
+    <div class="main">
+
+        <div class="card">
+            <div class="card-1">
+                <h2>Shoe</h2>
+                <img src="https://freepngimg.com/thumb/shoes/28116-8-nike-shoes.png" alt="" width="300px" height="250px">
+                <p> When there was a predetermined winner in a horse race, jockeys would hold their horses and shoo the winner in</p>
+                <button class="btn1">Read more</button>
+            </div>
+            <div class="card-1">
+                <h2>Earphone</h2>
+                <img src="https://freepngimg.com/thumb/technology/94083-airpods-apple-color-orange-earbuds-technology.png" alt="" width="300px" height="250px">
+                <p>boAt BassHeads 100 in-Ear Wired Headphones… boAt Rockerz 245 v2 Pro Wireless in Ear Neckba… boAt Airdopes 141 Bluetooth</p>
+                <button class="btn2">Read more</button>
+            </div>
+            <div class="card-1">
+                <h2>Watch</h2>
+                <img src="https://purepng.com/public/uploads/large/apple-watch-pcq.png" alt="" width="300px" height="250px">
+                <p>Watch time is monitored at the channel level and the video level. Meaning, watch time for an entire YouTube channel is monitored</p>
+                <button class="btn3">Read more</button>
+            </div>
+            <div class="card-1">
+                <h2>Smartphone</h2>
+                <img src="https://www.pngarts.com/files/3/Smartphone-Mobile-PNG-Image-Background.png" alt="" width="300px" height="250px">
+                <p>A smartphone (often simply called a phone) is a mobile device that combines the functionality of a traditional mobile phone with advanced computing capabilities.</p>
+                <button class="btn4">Read more</button>
+            </div>
+            <div class="card-1">
+                <h2>Laptop</h2>
+                <img src="https://pluspng.com/img-png/laptop-png-hd-laptop-notebook-png-image-2078.jpg "alt="" width="300px" height="250px">
+                <p>American Tourister Valex 28 Ltrs Large Laptop Backpack with Bottle Pocket and Front Organizer</p>
+                <button class="btn5">Read more</button>
+            </div>
+            <div class="card-1">
+                <h2>Camera</h2>
+                <img src="https://freepngimg.com/thumb/camera/24673-5-photo-camera.png" alt="" width="300px" height="250px">
+                <p>For other uses, see Camera (disambiguation). A camera is an instrument used to capture and store images and videos, either digitally via an electronic image</p>
+                <button class="btn6">Read more</button>
+            </div>
+
+            <div class="test">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, ratione voluptatem commodi, corporis odit maxime dicta accusantium, deserunt debitis maiores illo eius ad sapiente? Dolorum a doloribus laudantium nemo blanditiis.</p>
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,57 +1,67 @@
-// let destiny={
-//     from:"chennai",
-//     to:"Munnar",
-//     distance:600,
-//     milege:35,
-//     biek:"Dio" ,
-//     average:100,
-//     tank:10,
-//     days:5
-// };
+//class declaration
+class practiceClass {
+  constructor(det, cust) {
+    this.detail = det;
+    this.customer = cust;
+  }
 
-// let budget={
-//     totalBudget:5000,
-//     food:3500,
-//     remaining:1500
-// }
-
-
-// // Function to compare two objects for equality
-// function areObjectsEqual(obj1, obj2) {
-//     const keys1 = Object.keys(obj1);
-//     const keys2 = Object.keys(obj2);
-//     // console.log(keys1.length)
-//     if (keys1.length !== keys2.length) {
-//         return false;
-//     }
-
-//     for (let key of keys1) {
-//         // console.log(key)
-//         console.log(obj1[key])
-//         if (obj1[key] !== obj2[key]) {
-//             return false;
-//         }
-//     }
-
-//     return true;
-// }
-
-// // Creating two objects for comparison
-// let car1 = { make: "Toyota", model: "Corolla", year: 2021 };
-// let car2 = { make: "Toyota", model: "Corolla", year: 2021 };
-
-// // Comparing the two objects
-// console.log("Are car1 and car2 equal?", areObjectsEqual(car1, car2));
-
-class Person {
-  
-    constructor(name, age) {
-        this.testName = name;
-        this.testAge = age;
-        console.log("constructor calling")
-    }
+  dislayParkingDetails() {
+    let booked = 0;
+    this.customer.map((e) => {
+      if (this.detail.slot === booked) {
+        console.log("Slots Engaged"+ e.bikeNO);
+      } else {
+        //pushing details to the array
+        allocatedUser.push(e);
+        console.log("Slot confirmed");
+        booked += 1;
+      }
     
-}
-let obj1=new Person("mani",22)
+    });
+  }
 
-console.log(obj1)
+  getReport(){
+    console.log(allocatedUser)
+  }
+
+
+}
+//parking details
+const details = {
+  slot: 2,
+  price: 20,
+};
+//customer details
+let customer = [
+  {
+    bikeNO: "TN:30 AB:2737",
+    bike: "R15",
+  },
+  {
+    bikeNO: "TN31 BG:7886 ",
+    bike: "Pulsar",
+  },
+  {
+    bikeNO: "TN:32 DC:5462",
+    bike: "Yamaha",
+  },
+  {
+    bikeNO: "TN:32 AD:4646",
+    bike: "MT",
+  },
+];
+
+//initialize empty array
+let allocatedUser = [];
+
+//class invoke
+const t = new practiceClass(details, customer);
+t.dislayParkingDetails();
+t.getReport();
+
+
+//================== Developer need ======================
+
+// 1.should be know the Details For  bike Parking details in koki mall
+// 2.no_of_slots
+// 3.price

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Form</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    
+
+      //form fields checking
+      $(document).ready(()=>{
+        $("#submit").click((e)=>{
+          e.preventDefault()
+          let email=$("#email").val()
+          let name=$("#name").val()
+          let pwd=$("#pwd")
+          if(!email&&!name&&pwd){
+           $('form').css("background","yellow")
+          }
+          else{
+           $('form').css("background","orange")
+          }
+        })
+      })
+
+      $(document).ready(()=>{
+        $(".err-name").hide()
+        $(".err-email").hide()
+        $(".err-pwd").hide()
+        $("#submit").click(()=>{
+     
+
+          let email=$("#email").val()
+          let name=$("#name").val()
+          let password=$("#pwd").val()
+          //email
+        if(!email){
+          $('.err-email').show()
+        }else if(email){
+         
+            $('.err-email').hide()
+          }
+          //name 
+        if(!name){
+          $('.err-name').show()
+        }else if(name){
+         
+            $('.err-name').hide()
+        }
+          //password
+        if(!password){
+          $('.err-pwd').show()
+        }else if(password){
+         
+            $('.err-pwd').hide()
+          }
+        
+         
+          
+        })
+      })
+
+    </script>
+    <div class="main">
+      <form action="">
+        <h2 class="">Sign in</h2>
+        <label for="">Name</label>
+        <input type="text" id="name"/>
+        <p class="err-name" style="color: red">Please enter your name</p>
+        <label for="">Email</label>
+        <input type="text" id="email" />
+        <p class="err-email" style="color: red">Enter your Email</p>
+        <label for="">Password</label>
+        <input type="password" id="pwd" /><i
+          class="fa-solid fa-eye-slash"
+          id="eye"
+        ></i>
+        <p class="err-pwd" style="color: red">Please enter the password</p>
+
+        <button type="submit" id="submit">Sign in</button>
+      </form>
+    </div>
+  </body>
+</html>

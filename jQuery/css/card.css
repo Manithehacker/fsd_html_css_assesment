@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background:url("https://tse3.mm.bing.net/th?id=OIP.5pLQoHf6vwz4SQPRl6V_AAHaEo&pid=Api&P=0&w=300&h=300");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  width: 100%;
+}
+.card {
+  width: 85%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+.card-1 {
+    backdrop-filter: blur(50px);
+    background-color: rgba(255, 255, 255, 0.5);
+    
+  width: 100%;
+  font-size: 15px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  
+}
+.card-1 h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.card-1 img {
+  padding: 50px;
+  border-radius: 5px;
+  filter: drop-shadow(#8a8a8a 0px 0px 10px);
+  
+}
+.card-1 img:hover{
+  transform: scale(1.4);
+}
+
+.card-1 button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  margin: 20px 0px;
+}
+.card-1 p {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+.btn1:hover {
+  color: #fff;
+  background: #014b7f;
+}
+.btn2:hover {
+  color: #fff;
+  background: #9fd6fd;
+}
+.btn3:hover {
+  color: #fff;
+  background: #000000;
+}
+.btn4:hover {
+  color: #ffff;
+  background-color: #f31979;
+}
+.btn5:hover {
+  color: #fff;
+  background: #c2c0cb;
+}
+.btn6:hover {
+  color: #fff;
+  background: #000000;
+}
